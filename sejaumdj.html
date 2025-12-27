@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Seja um DJ 🎧</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b0033, #05000a);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ANIMAÇÕES */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #b400ff; }
+  50% { text-shadow: 0 0 30px #ff00ff; }
+  100% { text-shadow: 0 0 10px #b400ff; }
+}
+
+header {
+  padding: 60px 20px 30px;
+  animation: slideDown 1.2s ease;
+}
+
+header h1 {
+  font-size: 3.2em;
+  color: #ff00ff;
+  animation: glow 2s infinite;
+}
+
+header p {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  animation: slideUp 1.3s ease;
+}
+
+h2 {
+  color: #b400ff;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px #b400ff;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff00ff;
+}
+
+.card h3 {
+  color: #ff4dff;
+  margin-bottom: 8px;
+}
+
+.card p {
+  opacity: 0.85;
+}
+
+.footer {
+  padding: 40px 20px;
+  animation: slideUp 1.5s ease;
+}
+
+.footer h3 {
+  color: #ff00ff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  background: linear-gradient(45deg, #b400ff, #ff0080);
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff00ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Seja um DJ</h1>
+  <p>Created by <strong>ArtifexD3V</strong></p>
+</header>
+
+<section>
+  <h2>NOVIDADES:</h2>
+
+  <div class="card">
+    <h3>🎄 Atualização de Natal</h3>
+    <p><strong>Descrição:</strong> Ajude os NPCs recuperando cada item perdido para ganhar badges como recompensa!</p>
+  </div>
+
+  <div class="card">
+    <h3>🛠️ Bugs corrigidos</h3>
+    <p><strong>Descrição:</strong> Alguns bugs foram corrigidos.</p>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Próxima Atualização</h3>
+    <p><strong>Super promoção de gamepasses!</strong></p>
+    <p><strong>Descrição:</strong> HD Admin mais barato.</p>
+  </div>
+</section>
+
+<div class="footer">
+  <h3>Seja um DJ</h3>
+
+  <!-- TROQUE PELO LINK DO SEU JOGO -->
+  <a class="btn" href="https://www.roblox.com/games/9445722235" target="_blank">
+    Jogue na Roblox
+  </a>
+</div>
+
+</body>
+</html>
